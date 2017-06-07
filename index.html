@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> 2048-game </title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body style="padding: 100px;">
+    <div id="game"></div>
+    <div class="head clear">
+        <div class="scoreShow left">
+            <span>Score:</span>
+            <span id="score"></span>
+        </div>
+        <div class="selction right" onclick="getModel(event)">
+            <a href="#" rel="external nofollow" class="model" value="3">3X3</a>
+            <a href="#" rel="external nofollow" class="model" value="4">4X4</a>
+            <a href="#" rel="external nofollow" class="model" type="button">5X5</a>
+            <a href="#" rel="external nofollow" class="model" type="button">6X6</a>
+        </div>
+    </div>
+    <div id="gridPanel"></div>
+    <div id="gameover">
+        <h1 id="Score"></h1>
+        <a href="#" rel="external nofollow" id="again" onclick="obj.gameStart()">Try again</a>
+    </div>
+    <script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>
